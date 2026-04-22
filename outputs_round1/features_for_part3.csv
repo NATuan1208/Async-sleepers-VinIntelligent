@@ -1,0 +1,8 @@
+feature_name,data_source,lag_days,act_discovered,expected_importance
+return_rate_roll30_lag7,returns+order_items,7,4,HIGH
+review_rating_shift30_lag14,reviews,14,3B,MEDIUM
+discount_rate_roll30_lag14,order_items+promos,14,3A,HIGH
+stockout_days_roll30_lag7,inventory,7,3D,MEDIUM
+cancel_rate_roll30_lag14,orders+payments,14,3C,LOW
+web_sessions_roll30_lag14,web_traffic,14,4,MEDIUM
+cogs_margin_roll90_lag30,sales,30,4,HIGH

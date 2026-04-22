@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(jupyter nbconvert *)",
+      "Bash(pip show *)",
+      "Bash(.venv/Scripts/python.exe -m jupyter nbconvert --version)",
+      "Bash(.venv/Scripts/python.exe -m jupyter nbconvert --to notebook --execute --inplace notebooks/01_shadow_pnl_foundation.ipynb --ExecutePreprocessor.timeout=300)",
+      "Bash(.venv/Scripts/jupyter.exe nbconvert *)",
+      "Bash(.venv/Scripts/pip.exe install *)"
+    ]
+  }
+}

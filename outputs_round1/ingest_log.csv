@@ -1,0 +1,15 @@
+table_name,source_file,loaded_at,row_count,column_count
+customers,customers.csv,2026-04-18T16:23:54,121930,7
+geography,geography.csv,2026-04-18T16:23:54,39948,4
+inventory,inventory.csv,2026-04-18T16:23:54,60247,17
+order_items,order_items.csv,2026-04-18T16:23:54,714669,7
+orders,orders.csv,2026-04-18T16:23:54,646945,8
+payments,payments.csv,2026-04-18T16:23:54,646945,4
+products,products.csv,2026-04-18T16:23:54,2412,8
+promotions,promotions.csv,2026-04-18T16:23:54,50,10
+returns,returns.csv,2026-04-18T16:23:54,39939,7
+reviews,reviews.csv,2026-04-18T16:23:54,113551,7
+sales,sales.csv,2026-04-18T16:23:54,3833,3
+sample_submission,sample_submission.csv,2026-04-18T16:23:54,548,3
+shipments,shipments.csv,2026-04-18T16:23:54,566067,4
+web_traffic,web_traffic.csv,2026-04-18T16:23:54,3652,7

@@ -1,0 +1,8 @@
+timestamp,act,metric_label,n_customers,rate_pct,n_orders,aov_vnd,impact_vnd,impact_label,notebook,note
+2026-04-22T21:17:50,Act 2,Act2 -- Discount cost 10Y,1,100.00,1,749598746.8299991,749598747,750 triệu VND,01_shadow_pnl_foundation.ipynb,SUM(discount_amount) from order_items deduplicated ROW_NUMBER
+2026-04-22T21:17:50,Act 2,Act2 -- Returns refund 10Y,1,100.00,1,510598506.54999685,510598507,511 triệu VND,01_shadow_pnl_foundation.ipynb,SUM(refund_amount) from returns
+2026-04-22T21:17:50,Act 2,Act2 -- Stockout phantom 10Y (estimated),1,100.00,1,889663417.3804231,889663417,890 triệu VND,01_shadow_pnl_foundation.ipynb,"Estimated: avg_daily_demand x stockout_days x price, capped 2x"
+2026-04-22T21:18:08,Act 3A,"Act3A — discount curse recovery (promo-only cohort, 50% dependency reduction)",2784,50.00,2.3886494252873565,18270.79,60750377,61 triệu VND,02_shadow_pnl_investigation.ipynb,Conservative: 50% of promo-only cohort shifts to full-price ordering
+2026-04-22T21:18:09,Act 3B,Act3B — return reduction top category (Streetwear) 20% lift,21596,20.00,1,18889.555429709202,81587768,82 triệu VND,02_shadow_pnl_investigation.ipynb,20% reduction in return rate for worst category via size guide improvement
+2026-04-22T21:18:09,Act 3C,"Act3C — CC cancellation conversion (10% lift, fraud/remorse reduction)",21061,10.00,1,17288.78,36411900,36 triệu VND,02_shadow_pnl_investigation.ipynb,10% of CC-cancelled customers → completed; conservative given fraud hypothesis
+2026-04-22T21:18:10,Act 3D,Act3D — stockout phantom corrected 1x (Act 2 was 2x inflated),1,100.00,1,444831708.69020784,444831709,445 triệu VND,02_shadow_pnl_investigation.ipynb,1x avg_daily_demand × stockout_days × price; Act 2 LEAST() tautology was 2x

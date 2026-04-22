@@ -1,0 +1,9 @@
+{
+  "run_at": "2026-04-18T16:23:58",
+  "db_path": "D:\\SinhVien\\VinIntillegent\\gridbreaker.duckdb",
+  "data_dir": "D:\\SinhVien\\VinIntillegent\\Data",
+  "output_dir": "D:\\SinhVien\\VinIntillegent\\outputs_round1",
+  "tables_ingested": 14,
+  "audit_checks": 17,
+  "mcq_records": 11
+}

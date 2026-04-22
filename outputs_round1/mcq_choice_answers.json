@@ -1,0 +1,90 @@
+[
+  {
+    "question_id": "Q1",
+    "metric_name": "median_inter_order_gap_days",
+    "metric_value": "144.0",
+    "note": "LAG over order_date by customer_id",
+    "selected_choice": "C",
+    "choice_reason": "nearest_number distance=36.000000"
+  },
+  {
+    "question_id": "Q2",
+    "metric_name": "highest_margin_segment",
+    "metric_value": "Standard",
+    "note": "AVG((price-cogs)/price) by segment",
+    "selected_choice": "D",
+    "choice_reason": "exact_text matched"
+  },
+  {
+    "question_id": "Q3",
+    "metric_name": "top_streetwear_return_reason",
+    "metric_value": "wrong_size",
+    "note": "Mode return_reason after returns-products join",
+    "selected_choice": "B",
+    "choice_reason": "exact_text matched"
+  },
+  {
+    "question_id": "Q4",
+    "metric_name": "lowest_bounce_source",
+    "metric_value": "email_campaign",
+    "note": "Min average bounce_rate by traffic_source",
+    "selected_choice": "C",
+    "choice_reason": "exact_text matched"
+  },
+  {
+    "question_id": "Q5",
+    "metric_name": "promo_item_ratio",
+    "metric_value": "0.3866349316956521",
+    "note": "Promo applied if promo_id OR promo_id_2 is not null",
+    "selected_choice": "C",
+    "choice_reason": "nearest_number distance=0.003365"
+  },
+  {
+    "question_id": "Q6",
+    "metric_name": "highest_avg_orders_age_group",
+    "metric_value": "55+",
+    "note": "Join orders-customers and average orders by valid age_group",
+    "selected_choice": "A",
+    "choice_reason": "exact_text matched"
+  },
+  {
+    "question_id": "Q7",
+    "metric_name": "highest_revenue_region",
+    "metric_value": "East",
+    "note": "Exclude cancelled/returned/failed-like statuses before regional revenue sum",
+    "selected_choice": "C",
+    "choice_reason": "exact_text matched"
+  },
+  {
+    "question_id": "Q8",
+    "metric_name": "cancelled_orders_mode_payment_method",
+    "metric_value": "credit_card",
+    "note": "orders vs payments match 100%, mode computed from orders(cancelled)",
+    "selected_choice": "A",
+    "choice_reason": "exact_text matched"
+  },
+  {
+    "question_id": "Q8_check",
+    "metric_name": "orders_vs_payments_match_ratio",
+    "metric_value": "1.0",
+    "note": "compared_rows=646945, mismatched_rows=0",
+    "selected_choice": "UNMAPPED",
+    "choice_reason": "Question is not in choice key"
+  },
+  {
+    "question_id": "Q9",
+    "metric_name": "highest_return_rate_size_by_record_count",
+    "metric_value": "S",
+    "note": "Return rate defined by record counts, not quantity",
+    "selected_choice": "A",
+    "choice_reason": "exact_text matched"
+  },
+  {
+    "question_id": "Q10",
+    "metric_name": "installments_with_highest_avg_payment",
+    "metric_value": "6",
+    "note": "Max average payment_value by installments",
+    "selected_choice": "C",
+    "choice_reason": "nearest_number distance=0.000000"
+  }
+]

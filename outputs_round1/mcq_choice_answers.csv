@@ -1,0 +1,12 @@
+question_id,metric_name,metric_value,note,selected_choice,choice_reason
+Q1,median_inter_order_gap_days,144.0,LAG over order_date by customer_id,C,nearest_number distance=36.000000
+Q2,highest_margin_segment,Standard,AVG((price-cogs)/price) by segment,D,exact_text matched
+Q3,top_streetwear_return_reason,wrong_size,Mode return_reason after returns-products join,B,exact_text matched
+Q4,lowest_bounce_source,email_campaign,Min average bounce_rate by traffic_source,C,exact_text matched
+Q5,promo_item_ratio,0.3866349316956521,Promo applied if promo_id OR promo_id_2 is not null,C,nearest_number distance=0.003365
+Q6,highest_avg_orders_age_group,55+,Join orders-customers and average orders by valid age_group,A,exact_text matched
+Q7,highest_revenue_region,East,Exclude cancelled/returned/failed-like statuses before regional revenue sum,C,exact_text matched
+Q8,cancelled_orders_mode_payment_method,credit_card,"orders vs payments match 100%, mode computed from orders(cancelled)",A,exact_text matched
+Q8_check,orders_vs_payments_match_ratio,1.0,"compared_rows=646945, mismatched_rows=0",UNMAPPED,Question is not in choice key
+Q9,highest_return_rate_size_by_record_count,S,"Return rate defined by record counts, not quantity",A,exact_text matched
+Q10,installments_with_highest_avg_payment,6,Max average payment_value by installments,C,nearest_number distance=0.000000
